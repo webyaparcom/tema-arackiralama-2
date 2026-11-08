@@ -1,0 +1,59 @@
+{
+  "order": false,
+  "user": false,
+  "description": {
+    "tr": "Rota Filo: günlük ve uzun dönem araç kiralama, havalimanı teslim ve açık kiralama koşulları. (Demo site)",
+    "en": "Rota Filo: daily and long-term car rental, airport pick-up and clear rental terms. (Demo site)",
+    "ar": "روتا فيلو: تأجير يومي وطويل الأمد واستلام من المطار وشروط تأجير واضحة. (موقع تجريبي)"
+  },
+  "keyword": {
+    "tr": "araç kiralama, rent a car, filo",
+    "en": "car rental, rent a car, fleet",
+    "ar": "تأجير سيارات، فلو"
+  },
+  "category": "Kurumsal",
+  "name": "Rota Filo",
+  "domain": "arackiralama-2.webyapar.com",
+  "langs": {
+    "tr": true,
+    "en": true,
+    "ar": true,
+    "de": false,
+    "ru": false,
+    "es": false,
+    "fr": false,
+    "it": false,
+    "ja": false,
+    "zh": false,
+    "ko": false,
+    "pt": false
+  },
+  "logo": "logo.png",
+  "multi": false,
+  "icon": "icon.png",
+  "theme_color": "#F5A524",
+  "publishMode": "static",
+  "phone": "+90 342 000 00 00",
+  "email": "rezervasyon@rotafilo.example",
+  "address": "Havalimanı Cd. No: 2, Oğuzeli, Gaziantep (kurgusal adres)",
+  "font": {
+    "body": "inter",
+    "heading": "barlow-condensed",
+    "ar": {
+      "body": "ibm-plex-sans-arabic",
+      "heading": "noto-kufi-arabic"
+    }
+  },
+  "colorScheme": "auto",
+  "seo": {
+    "noindex": true
+  },
+  "cssTokens": {
+    "--mx-radius-sm": "2px",
+    "--mx-radius-md": "4px",
+    "--mx-radius-lg": "6px",
+    "--mx-radius-xl": "8px",
+    "--mx-shadow-md": "0 24px 60px rgba(0,0,0,.18)",
+    "--mx-dur": "280ms"
+  }
+}

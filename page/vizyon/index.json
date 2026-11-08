@@ -1,0 +1,43 @@
+{
+  "name": {
+    "tr": "Vizyon",
+    "en": "Vision",
+    "ar": "الرؤية"
+  },
+  "status": "play",
+  "id": "vizyon",
+  "path": "vizyon",
+  "category": "",
+  "text": {
+    "tr": "<h2>Vizyonumuz</h2>\n<p>Bölgenin güvenilir ve şeffaf araç kiralama markası olmak.</p>",
+    "en": "<h2>Our vision</h2>\n<p>To be the region’s trusted and transparent car-rental brand.</p>",
+    "ar": "<h2>رؤيتنا</h2>\n<p>أن نكون علامة تأجير السيارات الموثوقة والشفافة في المنطقة.</p>"
+  },
+  "desing": {
+    "header": [],
+    "body": [
+      "p0xazo"
+    ],
+    "footer": []
+  },
+  "desc": {},
+  "index": 2,
+  "icon": "policy",
+  "title": {
+    "tr": "Vizyon",
+    "en": "Vision",
+    "ar": "الرؤية"
+  },
+  "description": {
+    "tr": "Vizyonumuz",
+    "en": "Our vision",
+    "ar": "رؤيتنا"
+  },
+  "keyword": {
+    "tr": "",
+    "en": "",
+    "ar": ""
+  },
+  "update": "2026-10-31T14:38:36.481Z",
+  "date": "2026-05-19"
+}
