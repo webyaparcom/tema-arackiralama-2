@@ -12,7 +12,7 @@
     "r07hf5"
   ],
   "footer": [
-    "dqc4fo",
+    "g3vhhl",
     "12s9p6"
   ],
   "headerdefault": [
@@ -21,11 +21,11 @@
   ],
   "bodydefault": [],
   "footerdefault": [
-    "dqc4fo",
+    "g3vhhl",
     "12s9p6"
   ],
   "headtop": "",
-  "headbottom": "",
+  "headbottom": "<style id=\"wy-demo-bandi-menu\">#header>header[class*=\"-m10\"]:not([class*=\"-akista\"]){top:var(--mx-demo-bandi-h,0px)}</style>",
   "colors": {
     "lite": [
       {

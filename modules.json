@@ -30,7 +30,14 @@
         "logomaxh": "100px",
         "logoimg": "",
         "langcolor": "currentColor",
-        "langbg": "transparent"
+        "langbg": "transparent",
+        "tekSatir": "",
+        "logoDark": "",
+        "duzen": "",
+        "ctaText": "",
+        "ctaHref": "",
+        "temaDugmesi": "",
+        "temaAnahtar": ""
       },
       "version": "1.0.0",
       "icon": "menu"
@@ -163,7 +170,10 @@
         "img": "",
         "imgwidth": "250px",
         "stil": "",
-        "showlang": true
+        "showlang": true,
+        "showsocial": true,
+        "social": [],
+        "langcolor": ""
       },
       "data": [],
       "version": "1.0.0",
@@ -522,6 +532,12 @@
           "tr": "(yeni sekmede açılır)",
           "en": "(opens in a new tab)",
           "ar": "(يفتح في علامة تبويب جديدة)"
+        },
+        "girisHref": "",
+        "girisText": {
+          "tr": "Üye Girişi",
+          "en": "Login",
+          "ar": "تسجيل الدخول"
         }
       },
       "id": "40dk11",
@@ -621,9 +637,9 @@
         "bg": "var(--mx-site-bg, #ffffff)",
         "radius": "16px",
         "eyebrow": {
-          "tr": "Premium filo · 7/24 teslim",
-          "en": "Premium fleet · 24/7 hand-over",
-          "ar": "أسطول متميز · تسليم على مدار الساعة"
+          "tr": "Premium filo · Havalimanı teslim",
+          "en": "Premium fleet · Airport hand-over",
+          "ar": "أسطول متميز · تسليم في المطار"
         },
         "title": {
           "tr": "Şehirde ve yolda, sizi taşıyan filo",
@@ -3077,7 +3093,7 @@
     {
       "name": "Footer 1",
       "desing": {
-        "stil": "ortali-sade",
+        "stil": "koyu",
         "showlang": true,
         "bgcolor": "var(--mx-site-surface-2, #1e3046)",
         "color": "var(--mx-site-text, #ffffff)",
@@ -3149,7 +3165,67 @@
             "href": "yasaluyari"
           }
         ],
-        "social": []
+        "social": [],
+        "showsocial": true,
+        "langcolor": "",
+        "nlEmail": "rezervasyon@rotafilo.example",
+        "radius": "4px",
+        "services": [
+          {
+            "name": {
+              "tr": "Günlük kiralama",
+              "en": "Daily rental",
+              "ar": "تأجير يومي"
+            },
+            "href": "secenekler"
+          },
+          {
+            "name": {
+              "tr": "Uzun dönem",
+              "en": "Long-term rental",
+              "ar": "تأجير طويل الأمد"
+            },
+            "href": "secenekler"
+          },
+          {
+            "name": {
+              "tr": "Kurumsal filo",
+              "en": "Corporate fleet",
+              "ar": "أسطول الشركات"
+            },
+            "href": "secenekler"
+          },
+          {
+            "name": {
+              "tr": "Havalimanı teslim",
+              "en": "Airport pick-up",
+              "ar": "الاستلام من المطار"
+            },
+            "href": "secenekler"
+          },
+          {
+            "name": {
+              "tr": "Ek ürünler",
+              "en": "Extras",
+              "ar": "إضافات"
+            },
+            "href": "secenekler"
+          }
+        ],
+        "hours": [
+          {
+            "days": {
+              "tr": "Çalışma saatleri",
+              "en": "Opening hours",
+              "ar": "ساعات العمل"
+            },
+            "time": {
+              "tr": "Her gün 07:00 – 23:00 · Havalimanı teslim noktası uçuşlara göre",
+              "en": "Daily 07:00 – 23:00 · Airport desk follows flight times",
+              "ar": "يوميًا 07:00 – 23:00 · مكتب المطار بحسب الرحلات"
+            }
+          }
+        ]
       },
       "category": "footer",
       "data": [],
@@ -3231,9 +3307,9 @@
           "ar": "الفئة"
         },
         "roomsTitle": {
-          "tr": "Vites",
-          "en": "Gearbox",
-          "ar": "ناقل الحركة"
+          "tr": "Koltuk sayısı",
+          "en": "Seats",
+          "ar": "عدد المقاعد"
         },
         "m2Title": {
           "tr": "Günlük km sınırı",
@@ -3435,7 +3511,7 @@
             },
             "deal": "rent",
             "type": "ekonomi",
-            "rooms": "Manuel",
+            "rooms": 5,
             "m2": 300,
             "price": 1150,
             "currency": "TRY",
@@ -3470,7 +3546,7 @@
             },
             "deal": "rent",
             "type": "sedan",
-            "rooms": "Otomatik",
+            "rooms": 5,
             "m2": 300,
             "price": 1650,
             "currency": "TRY",
@@ -3500,7 +3576,7 @@
             },
             "deal": "rent",
             "type": "suv",
-            "rooms": "Otomatik",
+            "rooms": 5,
             "m2": 350,
             "price": 2450,
             "currency": "TRY",
@@ -3566,9 +3642,9 @@
           "ar": "مركبات للإيجار"
         },
         "subtitle": {
-          "tr": "Segment, vites ve günlük km sınırına göre süzün. Fiyatlar kurgusal, günlük ve KDV dahildir.",
-          "en": "Filter by segment, gearbox and daily km allowance. Prices are fictional, daily, VAT included.",
-          "ar": "صفِّ حسب الفئة وناقل الحركة وحد الكيلومترات اليومي. الأسعار افتراضية يومية وشاملة الضريبة."
+          "tr": "Segment, koltuk sayısı ve günlük km sınırına göre süzün. Fiyatlar kurgusal, günlük ve KDV dahildir.",
+          "en": "Filter by segment, seats and daily km allowance. Prices are fictional, daily, VAT included.",
+          "ar": "صفِّ حسب الفئة وعدد المقاعد وحد الكيلومترات اليومي. الأسعار افتراضية يومية وشاملة الضريبة."
         },
         "searchLabel": {
           "tr": "Araç ara",
@@ -3611,9 +3687,9 @@
           "ar": "الفئة"
         },
         "roomsTitle": {
-          "tr": "Vites",
-          "en": "Gearbox",
-          "ar": "ناقل الحركة"
+          "tr": "Koltuk sayısı",
+          "en": "Seats",
+          "ar": "عدد المقاعد"
         },
         "m2Title": {
           "tr": "Günlük km sınırı",
@@ -3820,7 +3896,7 @@
             },
             "deal": "rent",
             "type": "ekonomi",
-            "rooms": "Manuel",
+            "rooms": 5,
             "m2": 300,
             "price": 1150,
             "currency": "TRY",
@@ -3855,7 +3931,7 @@
             },
             "deal": "rent",
             "type": "sedan",
-            "rooms": "Otomatik",
+            "rooms": 5,
             "m2": 300,
             "price": 1650,
             "currency": "TRY",
@@ -3885,7 +3961,7 @@
             },
             "deal": "rent",
             "type": "suv",
-            "rooms": "Otomatik",
+            "rooms": 5,
             "m2": 350,
             "price": 2450,
             "currency": "TRY",
@@ -3920,7 +3996,7 @@
             },
             "deal": "rent",
             "type": "minivan",
-            "rooms": "Otomatik",
+            "rooms": 7,
             "m2": 350,
             "price": 2950,
             "currency": "TRY",
@@ -3950,7 +4026,7 @@
             },
             "deal": "rent",
             "type": "ekonomi",
-            "rooms": "Otomatik",
+            "rooms": 4,
             "m2": 250,
             "price": 2100,
             "currency": "TRY",
@@ -3985,7 +4061,7 @@
             },
             "deal": "rent",
             "type": "sedan",
-            "rooms": "Otomatik",
+            "rooms": 5,
             "m2": 300,
             "price": 3600,
             "currency": "TRY",
@@ -4020,6 +4096,375 @@
       "path": "ilan-filtre",
       "local": "body",
       "index": 35
+    },
+    {
+      "name": "Süreç Adımları",
+      "description": "3–6 adımlık süreç anlatımı: çizgi/ok ile bağlı daire numaralar, altında başlık + metin. Aktif adım vurgusu kaydırmayla ilerler (IntersectionObserver; JS yoksa tüm adımlar düz görünür). desing.stil: yatay (çizgiyle bağlı sıra; mobilde dikey zaman çizgisi) | dikey (iki yanlı zaman çizgisi) | kartli (kart + ok ayraç). Veri: data[] = [{no?, baslik{tr,en,ar}, metin{}, ikon?}]. Renkler yalnız token; koyu mod otomatik; RTL'de ok/çizgi yönü aynalanır.",
+      "version": "1.0.0",
+      "icon": "timeline",
+      "category": "surec",
+      "tags": [
+        "süreç",
+        "adım",
+        "zaman çizgisi",
+        "process",
+        "steps",
+        "ar"
+      ],
+      "desing": {
+        "stil": "dikey",
+        "max": "1200px",
+        "bgcolor": "var(--mx-site-bg, #ffffff)",
+        "textcolor": "var(--mx-site-text, #1b1b1b)",
+        "mutedcolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 72%, var(--mx-site-bg, #ffffff))",
+        "surface": "var(--mx-site-surface, #f6f6f4)",
+        "surface2": "var(--mx-site-surface-2, #ececea)",
+        "accent": "var(--mx-site-primary, #2563eb)",
+        "accentText": "var(--mx-site-primary-contrast, #ffffff)",
+        "bordercolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 16%, transparent)",
+        "radius": "16px",
+        "eyebrow": {
+          "tr": "Süreç",
+          "en": "Process",
+          "ar": "الإجراءات"
+        },
+        "title": {
+          "tr": "Rezervasyondan iadeye",
+          "en": "From booking to return",
+          "ar": "من الحجز إلى الإعادة"
+        },
+        "description": {
+          "tr": "Dört adımda kiralama.",
+          "en": "Renting in four steps.",
+          "ar": "التأجير في أربع خطوات."
+        },
+        "stepLabel": {
+          "tr": "Adım {n}",
+          "en": "Step {n}",
+          "ar": "الخطوة {n}"
+        },
+        "listLabel": {
+          "tr": "Süreç adımları",
+          "en": "Process steps",
+          "ar": "خطوات العملية"
+        }
+      },
+      "data": [
+        {
+          "baslik": {
+            "tr": "Araç ve tarih",
+            "en": "Vehicle and dates",
+            "ar": "المركبة والتواريخ"
+          },
+          "metin": {
+            "tr": "Aracı ve teslim-iade tarihlerini seçin.",
+            "en": "Choose the vehicle and the pick-up and return dates.",
+            "ar": "اختر المركبة وتاريخي الاستلام والإعادة."
+          },
+          "ikon": "forum"
+        },
+        {
+          "baslik": {
+            "tr": "Talep ve onay",
+            "en": "Request and confirmation",
+            "ar": "الطلب والتأكيد"
+          },
+          "metin": {
+            "tr": "Talebiniz teyit edilir; kapora alınmaz.",
+            "en": "Your request is confirmed; no deposit is taken.",
+            "ar": "يُؤكَّد طلبك ولا يُؤخذ عربون."
+          },
+          "ikon": "draw"
+        },
+        {
+          "baslik": {
+            "tr": "Teslim alma",
+            "en": "Pick-up",
+            "ar": "الاستلام"
+          },
+          "metin": {
+            "tr": "Kimlik ve ehliyetle teslim alınır, depozito provizyonu yapılır.",
+            "en": "Pick up with ID and licence; a deposit pre-authorisation is made.",
+            "ar": "تستلم بالهوية والرخصة ويُحجز مبلغ التأمين."
+          },
+          "ikon": "construction"
+        },
+        {
+          "baslik": {
+            "tr": "İade",
+            "en": "Return",
+            "ar": "الإعادة"
+          },
+          "metin": {
+            "tr": "Araç iade edilir, depozito serbest bırakılır.",
+            "en": "The vehicle is returned and the deposit is released.",
+            "ar": "تُعاد المركبة ويُفرَج عن مبلغ التأمين."
+          },
+          "ikon": "task_alt"
+        }
+      ],
+      "veri": {
+        "statik": true,
+        "dinamik": false,
+        "kaynak": "desing/data"
+      },
+      "id": "qrmtj4",
+      "path": "surec-adimlar",
+      "local": "body",
+      "index": 36
+    },
+    {
+      "name": {
+        "tr": "Footer 10 — Mega footer (CTA bantlı)",
+        "en": "Footer 10 — Mega footer (CTA band)",
+        "ar": "تذييل 10 — تذييل ضخم (شريط دعوة)"
+      },
+      "description": {
+        "tr": "Mega alt bilgi: üstte bülten/CTA bandı (e-posta kutusu + düğme — gönderim mailto ya da kapalı; KVKK notu), altında 5 sütun (marka + açıklama + sosyal · sayfalar (maxpages) · hizmetler · iletişim · çalışma saatleri; boş sütun basılmaz, sütun sınıfı otomatik), en altta telif + yasal bağlantılar + dil seçici + «yukarı» düğmesi. Üç varyant (desing.stil): koyu · acik · gradient-ust. Üç dil, RTL, koyu mod token'larla.",
+        "en": "Mega footer: newsletter/CTA band on top (e-mail box + button — mailto submission or disabled; privacy note), 5 columns below (brand + about + social · pages (maxpages) · services · contact · opening hours; empty columns are omitted, column class is automatic), bottom bar with copyright + legal links + language switcher + «back to top». Three variants (desing.stil): koyu · acik · gradient-ust. Three languages, RTL, dark mode via tokens.",
+        "ar": "تذييل ضخم: شريط نشرة بريدية/دعوة في الأعلى (حقل بريد + زر؛ إرسال mailto أو معطّل؛ ملاحظة خصوصية)، 5 أعمدة (العلامة + نبذة + تواصل · الصفحات · الخدمات · الاتصال · ساعات العمل)، شريط سفلي بحقوق النشر والروابط القانونية ومبدّل اللغة وزر «إلى الأعلى». ثلاثة أنماط، ثلاث لغات، RTL، وضع داكن."
+      },
+      "version": "1.0.0",
+      "icon": "footer",
+      "category": "footer",
+      "tags": [
+        "footer",
+        "bulten",
+        "newsletter",
+        "mega",
+        "ar"
+      ],
+      "desing": {
+        "stil": "koyu",
+        "showlang": true,
+        "maxpages": 8,
+        "koyubg": "color-mix(in srgb, #0f172a 86%, var(--mx-site-primary, #2563eb))",
+        "koyutext": "#f1f5f9",
+        "acikbg": "var(--mx-site-surface, #f6f6f4)",
+        "aciktext": "var(--mx-site-text, #1b1b1b)",
+        "accent": "var(--mx-site-primary, #2563eb)",
+        "accentText": "var(--mx-site-primary-contrast, #ffffff)",
+        "errcolor": "var(--mx-color-danger, #b42318)",
+        "radius": "4px",
+        "logo_maxh": "52px",
+        "logo_plate": false,
+        "about": {
+          "tr": "Rota Filo: günlük ve uzun dönem araç kiralama, havalimanı teslim ve açık kiralama koşulları. (Demo site)",
+          "en": "Rota Filo: daily and long-term car rental, airport pick-up and clear rental terms. (Demo site)",
+          "ar": "روتا فيلو: تأجير يومي وطويل الأمد واستلام من المطار وشروط تأجير واضحة. (موقع تجريبي)"
+        },
+        "nlShow": true,
+        "nlGonderim": "mailto",
+        "nlEmail": "rezervasyon@rotafilo.example",
+        "nlTitle": {
+          "tr": "Gelişmelerden haberdar olun",
+          "en": "Stay in the loop",
+          "ar": "ابقَ على اطلاع"
+        },
+        "nlText": {
+          "tr": "Ayda bir bülten; kampanya ve yeniliklerden ilk siz haberdar olun.",
+          "en": "One newsletter a month; be the first to hear about offers and news.",
+          "ar": "نشرة واحدة شهريًا؛ كن أول من يعرف بالعروض والمستجدات."
+        },
+        "nlLabel": {
+          "tr": "E-posta adresiniz",
+          "en": "Your e-mail address",
+          "ar": "بريدك الإلكتروني"
+        },
+        "nlBtn": {
+          "tr": "Abone ol",
+          "en": "Subscribe",
+          "ar": "اشترك"
+        },
+        "nlKvkk": {
+          "tr": "Abone olarak e-posta adresinizin bülten amacıyla işlenmesini kabul edersiniz. İstediğiniz an ayrılabilirsiniz.",
+          "en": "By subscribing you agree to the processing of your e-mail address for the newsletter. You can unsubscribe at any time.",
+          "ar": "بالاشتراك توافق على معالجة بريدك الإلكتروني لأغراض النشرة. يمكنك إلغاء الاشتراك في أي وقت."
+        },
+        "nlSubject": {
+          "tr": "Bülten aboneliği",
+          "en": "Newsletter subscription",
+          "ar": "الاشتراك في النشرة"
+        },
+        "nlBody": {
+          "tr": "Merhaba, bültene abone olmak istiyorum.",
+          "en": "Hello, I would like to subscribe to the newsletter.",
+          "ar": "مرحبًا، أرغب في الاشتراك في النشرة البريدية."
+        },
+        "nlErr": {
+          "tr": "Geçerli bir e-posta adresi girin.",
+          "en": "Enter a valid e-mail address.",
+          "ar": "أدخل بريدًا إلكترونيًا صالحًا."
+        },
+        "nlOk": {
+          "tr": "E-posta uygulamanız açılıyor; aboneliği oradan onaylayın.",
+          "en": "Your e-mail app is opening; confirm the subscription there.",
+          "ar": "يتم فتح تطبيق البريد؛ أكّد الاشتراك من هناك."
+        },
+        "title_pages": {
+          "tr": "Sayfalar",
+          "en": "Pages",
+          "ar": "الصفحات"
+        },
+        "title_services": {
+          "tr": "Hizmetler",
+          "en": "Services",
+          "ar": "الخدمات"
+        },
+        "title_contact": {
+          "tr": "İletişim",
+          "en": "Contact",
+          "ar": "اتصل بنا"
+        },
+        "title_hours": {
+          "tr": "Çalışma Saatleri",
+          "en": "Opening Hours",
+          "ar": "ساعات العمل"
+        },
+        "title_social": {
+          "tr": "Bizi takip edin",
+          "en": "Follow us",
+          "ar": "تابعنا"
+        },
+        "services": [
+          {
+            "name": {
+              "tr": "Günlük kiralama",
+              "en": "Daily rental",
+              "ar": "تأجير يومي"
+            },
+            "href": "secenekler"
+          },
+          {
+            "name": {
+              "tr": "Uzun dönem",
+              "en": "Long-term rental",
+              "ar": "تأجير طويل الأمد"
+            },
+            "href": "secenekler"
+          },
+          {
+            "name": {
+              "tr": "Kurumsal filo",
+              "en": "Corporate fleet",
+              "ar": "أسطول الشركات"
+            },
+            "href": "secenekler"
+          },
+          {
+            "name": {
+              "tr": "Havalimanı teslim",
+              "en": "Airport pick-up",
+              "ar": "الاستلام من المطار"
+            },
+            "href": "secenekler"
+          },
+          {
+            "name": {
+              "tr": "Ek ürünler",
+              "en": "Extras",
+              "ar": "إضافات"
+            },
+            "href": "secenekler"
+          }
+        ],
+        "hours": [
+          {
+            "days": {
+              "tr": "Çalışma saatleri",
+              "en": "Opening hours",
+              "ar": "ساعات العمل"
+            },
+            "time": {
+              "tr": "Her gün 07:00 – 23:00 · Havalimanı teslim noktası uçuşlara göre",
+              "en": "Daily 07:00 – 23:00 · Airport desk follows flight times",
+              "ar": "يوميًا 07:00 – 23:00 · مكتب المطار بحسب الرحلات"
+            }
+          }
+        ],
+        "address": {
+          "tr": "Havalimanı Cd. No: 2, Oğuzeli, Gaziantep (kurgusal adres)",
+          "en": "2 Havalimani Street, Oguzeli, Gaziantep (fictional address)",
+          "ar": "شارع المطار رقم 2، أوغوزيلي، غازي عنتاب (عنوان افتراضي)"
+        },
+        "phone": "+90 342 000 00 00",
+        "email": "rezervasyon@rotafilo.example",
+        "social": [],
+        "legal": [
+          {
+            "text": {
+              "tr": "Gizlilik Politikası",
+              "en": "Privacy Policy",
+              "ar": "سياسة الخصوصية"
+            },
+            "name": {
+              "tr": "Gizlilik Politikası",
+              "en": "Privacy Policy",
+              "ar": "سياسة الخصوصية"
+            },
+            "href": "gizlilikpolitikasi"
+          },
+          {
+            "text": {
+              "tr": "Kişisel Veriler",
+              "en": "Personal Data",
+              "ar": "البيانات الشخصية"
+            },
+            "name": {
+              "tr": "Kişisel Veriler",
+              "en": "Personal Data",
+              "ar": "البيانات الشخصية"
+            },
+            "href": "kisiselveriler"
+          },
+          {
+            "text": {
+              "tr": "Kullanıcı Hakları",
+              "en": "User Rights",
+              "ar": "حقوق المستخدم"
+            },
+            "name": {
+              "tr": "Kullanıcı Hakları",
+              "en": "User Rights",
+              "ar": "حقوق المستخدم"
+            },
+            "href": "kullanicahaklari"
+          },
+          {
+            "text": {
+              "tr": "Yasal Uyarı",
+              "en": "Legal Notice",
+              "ar": "إشعار قانوني"
+            },
+            "name": {
+              "tr": "Yasal Uyarı",
+              "en": "Legal Notice",
+              "ar": "إشعار قانوني"
+            },
+            "href": "yasaluyari"
+          }
+        ],
+        "rightsText": {
+          "tr": "Tüm hakları saklıdır.",
+          "en": "All rights reserved.",
+          "ar": "جميع الحقوق محفوظة."
+        },
+        "topLabel": {
+          "tr": "Yukarı çık",
+          "en": "Back to top",
+          "ar": "العودة إلى الأعلى"
+        }
+      },
+      "data": [],
+      "veri": {
+        "statik": true,
+        "dinamik": false,
+        "kaynak": "desing/data"
+      },
+      "id": "g3vhhl",
+      "path": "footer-10",
+      "local": "footer",
+      "index": 37
     }
   ]
 }
